@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Echo</string>
+    <string name="help_text">Click Mic button to speak</string>
+    <string name="button">➤</string>
+</resources>
