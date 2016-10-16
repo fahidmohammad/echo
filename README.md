@@ -33,7 +33,9 @@ GIATA was the hotel content provider of our choice, because it was the only API 
 Anything you guys envision for the future for this?
 ---------------------------------------------
 
-We hope to train the AI on the database directly instead, so we could skip running NLP algorithms on the hotel descriptions. Also we want to extend the API to other languages and countries. We currently are limiting it to Singapore because of our limited time and computing power. 
+I seriously think that the first thing we should be doing if this project ever takes off is to clean up code. This repo is the demon-child of the lack of sleep and the passion to code. It didn't really end well.
+
+For real though, we hope to train the AI on the database directly instead, so we could skip running NLP algorithms on the hotel descriptions. Also we want to extend the API to other languages and countries. We currently are limiting it to Singapore because of our limited time and computing power. 
 
 The future is simply endless when you fused machine intelligence and data together!
 
