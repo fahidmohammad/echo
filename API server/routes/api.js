@@ -78,6 +78,7 @@ router.post('/search', function (req, res, next) {
                     var nearby = result.parameters['hotel-nearby']
                     var arr = [true]
                     if(_data.context_id && _data.context_id!=e.id) return false
+                    if(!service) return false
                     if (service.indexOf('pool') != -1) {
                       arr.push((e.data.sports_entertainment && parseInt(e.data.sports_entertainment.sports_numberofpools, 10) >= 1))
                     }
@@ -190,7 +191,7 @@ router.get('/search/:giataid/similar', function (req, res, next) {
           resultsarr = results.map(function (ele) {
             var t = ele.data.text
             var arr = sortingarr.map(function (ele) {
-              return seedHotel.text[ele].score(t[ele] + '', 0.5)
+              return seedHotel.text[ele] ?seedHotel.text[ele].score(t[ele] + '', 0.5) : 0
             })
             return (ele.id == result.id) ? null : {id: ele.id,score: arr}
           }).sort()
