@@ -1,7 +1,7 @@
 Echo
 ==============
 
-Intelligent API for travel agents to find similar hotels with natural language queries.
+Intelligent API for travel agents to find similar hotels with natural language queries. Bonus: A chat app demo with the API!
 
 Problem Statement
 -----------------
